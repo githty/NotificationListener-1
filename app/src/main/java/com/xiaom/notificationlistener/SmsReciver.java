@@ -10,7 +10,7 @@ import android.util.Log;
 public class SmsReciver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        boolean check = MainActivity.checkBox.isChecked();
+        boolean check = MainActivity.listennerSMS.isChecked();
         if (check) {
             Bundle bundle = intent.getExtras();
             StringBuffer sb = new StringBuffer();
